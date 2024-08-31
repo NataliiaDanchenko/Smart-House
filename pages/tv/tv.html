@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../index.css">
+  <link rel="stylesheet" href="../../styles-modal.css">
+  <title>Document</title>
+</head>
+<body>
+  <main class="container">
+    <h1>TV</h1>
+    <button id="channel">Select a channel</button>
+    <button id="film">Select a film</button>
+
+    <ul id="channel-list">
+      <li class="button-space">1+1</li>
+      <li class="button-space">Discavery</li>
+      <li class="button-space">Футбол</li>
+      <li class="button-space">ICTV</li>
+      <li class="button-space">Перший</li>
+    </ul>
+
+    <input id="movieInput" type="text" placeholder="Add film"  style="display: none;">
+    <div id="movieDisplay"></div> 
+    <button id="clearMovie" style="display: none;" class="button-space-margin">Clear</button> 
+    
+
+    <div id="modal-lamps" class="modal-device">
+      <div class="modal-wrap-device">
+        <div class="modal-content-device"></div>
+        <button id="close-lamps" class="button-space-top">Go back</button>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="tv.js"></script>
+</body>
+</html>

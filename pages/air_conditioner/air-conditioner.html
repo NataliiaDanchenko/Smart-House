@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../styles-modal.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Air Conditioner</h1>
+        <button id="button-open-modal">Turn on</button>
+
+        <div id="modal-form-content" class="modal-device">
+          <div id="modal-form-wrap" class="modal-wrap-device">
+            <div class="modal-content-device">
+              <div class="temperature">
+                <div class="temperature__title">Temperature 25 t&#176</div>
+                <input type="range" id="temperature-bar" min="0" max="100" value="25" />
+                <button id="increment-temperature" class="">Increase</button>
+                <button id="decrement-temperature" class="">Reduce</button>
+              </div>
+              <div>
+                <div class="humidity">
+                  <div class="humidity__title">Humidity 50%</div>
+                  <input type="range" id="humidity-bar" min="0" max="100" value="50" />
+                  <button id="increment-humidity" class="">Increase</button>
+                  <button id="decrement-humidity" class="">Reduce</button>
+                </div>
+              </div>
+
+              <button id="modal-btn-close" class="button-close" type="button">Turn off</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./airconditioner.js"></script>
+    <script type="module"  src="./counter.js"></script>
+  </body>
+</html>
